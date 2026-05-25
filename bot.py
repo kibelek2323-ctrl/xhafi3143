@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = "8960680336:AAHs9C_GoKdxHckiVmGTT3e61Y5zufaJioI"
+BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 ADMIN_ID = int(os.getenv("ADMIN_ID", "0") or 0)
 VOUCHER_URL = "https://www.g2a.com/paypal-gift-card-5-eur-by-rewarble-global-i10000339995019"
 
